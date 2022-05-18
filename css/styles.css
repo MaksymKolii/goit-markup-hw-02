@@ -102,9 +102,9 @@ background: #2F303A;
     color: #757575;
 }
 
-.feature, .work, .team{
+/* .feature, .work, .team{
     display: flex;
-}
+} */
 
 .section-team {
     background: #F5F4FA;
