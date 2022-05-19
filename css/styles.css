@@ -1,49 +1,83 @@
-
+/* цвет остовного текста color: #757575; */
+/* вторичныу цвет текста color: #212121; */
+/* color: #FFFFFF; */
+/* акцент  color: #2196F3;*/
+/* hover change #188CE8; */
+/* background: #E5E5E5; */
+/* second background: #F5F4FA; */
 a {
     text-decoration: none;
 }
 
-ul {
-    list-style: none;
+:root{
+    --accent-color: #2196F3;
+    --main-p-color: #757575;
+    --second-h-color:#212121;
+
 }
 
-.body {
-    background: #E5E5E5;
+.nav-link.link-active {
+    color: var(--accent-color);
 }
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-color);
+}
+
+.list {
+    list-style: none;}
+
+.body {
+    color: #757575;
+    background: #E5E5E5;}
+
 .logo {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-    color: #2196F3;
-    
+    color: var(--accent-color);
 }
 
 .logo-dark {
 
     color: #000000;
 }
-.header-link, .header-contacts {
+
+.nav-link {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+    color: var(--second-h-color);
 }
-.site-nav a {
+.header-link {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--main-p-color);
+}
+
+
+/* 
+.site-nav {
     
-    color: #212121;
-}
+    color:var(--second-h-color);
+} */
 .header-contacts a {
     color: #757575;
 }
-.header-link.contact {
+
+/* .header-link.contact {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.header-link:hover, .header-link:focus{
-    color: #2196F3
-}
+} */
+
+
 
 .section-main {
 background: #2F303A;
@@ -71,7 +105,7 @@ background: #2F303A;
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
-    background: #2196F3;
+    background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
@@ -173,7 +207,7 @@ footer{
 
 
 .portfolio-button:hover{
-    background: #2196F3;
+    background: var(--accent-color);
     color: #FFFFFF;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
