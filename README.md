@@ -1,2 +1,2 @@
-# goit_markup_hw_01
-First homework on GoIT courses
+# goit_markup_hw_02
+Second homework on GoIT courses
