@@ -24,7 +24,7 @@ ul {
 
     color: #000000;
 }
-.link-header, .header-contacts {
+.header-link, .header-contacts {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
@@ -38,10 +38,10 @@ ul {
 .header-contacts a {
     color: #757575;
 }
-.link-header.contact {
+.header-link.contact {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.link-header:hover, .link-header:focus{
+.header-link:hover, .header-link:focus{
     color: #2196F3
 }
 
@@ -140,7 +140,7 @@ background: #2F303A;
 }
 
 
-.link-footer {
+.footer-link {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -149,7 +149,7 @@ background: #2F303A;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
-.link-footer.location {
+.footer-link.location {
 
     color: #FFFFFF;
 }
