@@ -4,8 +4,17 @@
 /* акцент  color: #2196F3;*/
 /* hover change #188CE8; */
 /* background: #E5E5E5; */
-/* second background: #F5F4FA; */
-a {
+/* second background: #F5F4FA; 
+logo color dark color: #000000;
+section main background: #2F303A;
+
+
+*/
+.list {
+    list-style: none;
+}
+
+.link {
     text-decoration: none;
 }
 
@@ -15,47 +24,210 @@ a {
     --second-h-color:#212121;
 
 }
-
-.nav-link.link-active {
-    color: var(--accent-color);
-}
-
-.header-link:hover{
-        color: var(--accent-color);
-    }
-
-.header-link:focus {
-    color: var(--accent-color);
-}
-
-.nav-link:hover {
-    color: var(--accent-color);
-}
-
-.nav-link:focus {
-    color: var(--accent-color);
-}
-
-.list {
-    list-style: none;}
-
-.body {
-    color: #757575;
-    background: #E5E5E5;}
-
+/* ========================== HEADER================================ */
 .logo {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--accent-color);
+    color: #2196F3;
 }
-
 .logo-dark {
-
-    color: #000000;
+    color: #000000; ;
 }
+.nav-link, 
+.header-link-phone,
+.header-link-mail{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+.header-link-phone,
+.header-link-mail{
+    color: #757575;
+}
+.nav-link:hover, 
+.header-link-phone:hover, 
+.header-link-mail:hover,
+.nav-link:focus,
+.header-link-phone:focus,
+.header-link-mail:focus{
+    color: #2196F3;
+}
+
+
+.link-active {
+    color: #2196F3;
+}
+
+/* =================== /HEADER ================================= */
+
+/* ======================== Section MAIN ========================= */
+.section-main {
+    background: #2F303A;
+}
+.main-header {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+}
+.main-btn{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+.main-btn:hover {
+    background-color: #188CE8;
+    color: white;
+}
+/* ===================== /MAIN ====================================== */
+
+/* =========================== FEATURES ============================== */
+.feature-title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+.feature-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+/* =========================== /FEATURES ============================== */
+
+/* ======================== WORK ======================================== */
+.section-title{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+}
+/* ======================== /WORK ======================================== */
+
+/* ======================== TEAM ========================================== */
+.section-team{
+    background: #F5F4FA;
+}
+.team-title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.team-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/* ======================== /TEAM ========================================== */
+
+/* ============================= FOOTER ========================= */
+.page-footer {
+    background: #2F303A;
+}
+.footer-link,
+.footer-link-mail,
+.footer-link-phone {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.logo-light, .location {
+    color: #FFFFFF;
+}
+
+.footer-link-mail:hover,
+.footer-link-phone:hover,
+.footer-link-mail:focus,
+.footer-link-phone:focus{
+    color: #2196F3;
+}
+/* ============================= /FOOTER ========================= */
+
+/* ============================= PORTFOLIO html ====================== */
+/* ====  filter == */
+.filter-btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    border: none;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+.filter-btn:hover{
+    background: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+/* ===== /filter ====== */
+/* ====== Content =======*/
+.content-title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+.content-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+/* ====== /Content =======*/
+/* ============================= /PORTFOLIO html ====================== */
+
+
+
+/* 
 
 .nav-link {
     font-family: 'Roboto';
@@ -74,19 +246,6 @@ a {
     color: var(--main-p-color);
 }
 
-
-/* 
-.site-nav {
-    
-    color:var(--second-h-color);
-} */
-/* .header-contacts a {
-    color: #757575;
-} */
-
-/* .header-link.contact {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-} */
 
 
 
@@ -147,9 +306,7 @@ background: #2F303A;
     color: #757575;
 }
 
-/* .feature, .work, .team{
-    display: flex;
-} */
+ 
 
 .section-team {
     background: #F5F4FA;
@@ -241,4 +398,4 @@ footer{
         line-height: 30px;
         letter-spacing: 0.03em;
         color: #757575;
-}
+} */

@@ -5,26 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!--Header-->
-    <header class="header">
+    <header class="page-header">
       <!--page navigation-->
-      <nav>
-        <a href="#" lang="en" class="logo">Web <span class="logo-dark">Studio</span></a>
-        <ul class="nav list">
-          <li><a class="nav-link link-active" href="./index.html">Студия</a></li>
-          <li>
-            <a class="nav-link" href="./portfolio.html">Портфолио</a>
+      <nav class="navigation">
+        <a href="#" lang="en" class="logo link list">Web <span class="logo-dark">Studio</span></a>
+        <ul class="nav-list list">
+          <li class="nav-item">
+            <a class="nav-link link-active link" href="./index.html">Студия</a>
           </li>
-          <li><a class="nav-link" href="#">Контакты</a></li>
+          <li class="nav-item">
+            <a class="nav-link link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link" href="#">Контакты</a>
+          </li>
         </ul>
       </nav>
-      <!--contacts info not in nav-->
+      <!--contacts info -->
       <ul class="header-contacts list">
-        <li><a class="header-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="header-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li>
+          <a class="header-link-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li>
+          <a class="header-link-phone link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
       </ul>
     </header>
 
@@ -32,13 +46,13 @@
       <!--Section effective_solution_for_your_business-->
       <section class="section-main">
         <h1 class="main-header">Эффективные решения для вашего бизнеса</h1>
-        <button class="main-button" type="button">Заказать услугу</button>
+        <button class="main-btn" type="button">Заказать услугу</button>
       </section>
       <!--Section features-->
       <section class="section-features">
         <!--make invisible h2 later-->
-        <h2 class="section-title">Benefits</h2>
-        <ul class="feature list">
+        <h2 hidden class="section-title">Benefits</h2>
+        <ul class="feature-list list">
           <li class="feature-item">
             <h3 class="feature-title">Внимание к деталям</h3>
             <p class="feature-text">
@@ -68,9 +82,10 @@
       <!--Section work-->
       <section class="section-work">
         <h2 class="section-title">Чем мы занимаемся</h2>
-        <ul class="work list">
+        <ul class="work-list list">
           <li class="work-item">
             <img
+              class="section-work-img"
               src="./images/block_scheme2.jpg"
               alt="Руки кодирующие на ноутбуке по блок-схеме"
               width="370"
@@ -79,6 +94,7 @@
           </li>
           <li class="work-item">
             <img
+              class="section-work-img"
               src="./images/mobile_vers2.jpg"
               alt="Экран ноутбука с вариатами моб.приложений"
               width="370"
@@ -87,6 +103,7 @@
           </li>
           <li class="work-item">
             <img
+              class="section-work-img"
               src="./images/laptop_vers2.jpg"
               alt="Планшет с игрой в руках "
               width="370"
@@ -98,9 +115,10 @@
       <!--our_team-->
       <section class="section-team">
         <h2 class="section-title">Наша команда</h2>
-        <ul class="team list">
+        <ul class="team-list list">
           <li class="team-item">
             <img
+              class="section-team-img"
               src="./images/ihor_demian2.jpg"
               alt="Фотография Игорь Демьяненко"
               width="270"
@@ -111,6 +129,7 @@
           </li>
           <li class="team-item">
             <img
+              class="section-team-img"
               src="./images/olha_repina2.jpg"
               alt="Фотография Ольга Репина"
               width="270"
@@ -121,6 +140,7 @@
           </li>
           <li class="team-item">
             <img
+              class="section-team-img"
               src="./images/nikolaj_tarasov2.jpg"
               alt="Фотография Николай Тарасов"
               width="270"
@@ -131,6 +151,7 @@
           </li>
           <li class="team-item">
             <img
+              class="section-team-img"
               src="./images/michail_ermakov2.jpg"
               alt="Фотография Михаил Ермаков"
               width="270"
@@ -143,21 +164,25 @@
       </section>
     </main>
     <!--Footer-->
-    <footer>
-      <a href="#" class="logo">Web<span class="logo-light">Studio</span></a>
-      <address>
-        <ul class="footer list">
-          <li>
+    <footer class="page-footer">
+      <a href="#" class="logo link list">Web<span class="logo-light">Studio</span></a>
+      <address class="footer-addr">
+        <ul class="footer-list list">
+          <li class="footer-item">
             <a
-              class="footer-link location"
+              class="footer-link location link"
               href="https://goo.gl/maps/vdUjSE2Tv6SdJSwDA"
               target="_blank"
               rel="noopener noreferrer"
               >г. Киев, пр-т Леси Украинки, 26
             </a>
           </li>
-          <li><a class="footer-link" href="mailto:info@example.com">info@example.com</a></li>
-          <li><a class="footer-link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+          <li class="footer-item">
+            <a class="footer-link-mail link" href="mailto:info@example.com">info@example.com</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-link-phone link" href="tel:+380991111111">+38 099 111 11 11</a>
+          </li>
         </ul>
       </address>
     </footer>
