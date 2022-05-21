@@ -27,8 +27,11 @@ body{
     --main-h-color:#212121;
     --main-white-color:#FFFFFF;
     --logo-dark-color:#000000;
-    --main-bg-lite-color: #F5F4FA;
-    --main-bg-dark-color--: #2F303A;
+    --main-bg-lite-color:#F5F4FA;
+    --main-bg-dark-color:#2F303A;
+    --box-shadow-filter:0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    --footer-link-col:rgba(255, 255, 255, 0.6);
+    --hero-btn-box-shadow:rgba(0, 0, 0, 0.15);
 
 }
 /* ========================== HEADER================================ */
@@ -74,7 +77,7 @@ body{
 
 /* ======================== Section MAIN ========================= */
 .hero {
-    background: var(--main-bg-dark-color--);
+    background: var(--main-bg-dark-color);
 }
 .main-title {
     font-weight: 900;
@@ -97,7 +100,7 @@ body{
     letter-spacing: 0.06em;
     color: var(--main-white-color);
     background-color: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--hero-btn-box-shadow);
     border-radius: 4px;
     
 }
@@ -166,13 +169,13 @@ body{
 
 /* ============================= FOOTER ========================= */
 .page-footer {
-    background: var(--main-bg-dark-color--);
+    background: var(--main-bg-dark-color);
 }
 .footer-item{
     font-style: normal
 }
 .footer-link{
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer-link-col)
 }
 .logo-light {
     color: var(--main-white-color);
@@ -203,7 +206,7 @@ body{
 }
 .filter-btn:hover{
     background-color: var(--accent-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: var(--box-shadow-filter);
     border-radius: 4px;
     color: var(--main-white-color);
 }
