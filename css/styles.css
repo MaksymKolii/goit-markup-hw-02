@@ -7,20 +7,10 @@
 /* second background lite: #F5F4FA; 
 logo color dark color: #000000;
 section background dark: #2F303A;
-
 */
-
-.list {
-    list-style: none;
-}
-
-.link {
-    text-decoration: none;
-}
-body{
-    font-family: 'Roboto', sans-serif;
-}
 :root{
+    --primary-font-family:'Roboto', sans-serif;
+    --secondary-font-family:'Raleway', sans-serif;
     --accent-color: #2196F3;
     --btn-other-color: #188CE8;
     --main-p-color: #757575;
@@ -32,15 +22,29 @@ body{
     --box-shadow-filter:0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     --footer-link-col:rgba(255, 255, 255, 0.6);
     --hero-btn-box-shadow:rgba(0, 0, 0, 0.15);
+    --primary-letter-spacing: 0.03em;
+    --secondary-letter-spacing: 0.06em;
 
 }
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+body{
+    font-family:var(--primary-font-family);
+}
+
 /* ========================== HEADER================================ */
 .logo {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--secondary-font-family);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
+    letter-spacing: var(--primary-letter-spacing);
     color: var(--accent-color);
 }
 .logo-dark {
@@ -84,7 +88,7 @@ body{
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
-    letter-spacing: 0.06em;
+    letter-spacing: var(--secondary-letter-spacing);
     text-transform: uppercase;
     color: var(--main-white-color);
 }
@@ -97,7 +101,7 @@ body{
     display: flex;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.06em;
+    letter-spacing: var(--secondary-letter-spacing);
     color: var(--main-white-color);
     background-color: var(--accent-color);
     box-shadow: var(--hero-btn-box-shadow);
@@ -115,7 +119,7 @@ body{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.03em;
+    letter-spacing: var(--primary-letter-spacing);
     text-transform: uppercase;
     color: var(--main-h-color);
 }
@@ -125,7 +129,7 @@ body{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
+    letter-spacing: var(--primary-letter-spacing);
 }
 .feature-text{
     color: var(--main-p-color);
@@ -139,7 +143,7 @@ body{
         font-size: 36px;
         line-height: 1.17;
         text-align: center;
-        letter-spacing: 0.03em;
+        letter-spacing: var(--primary-letter-spacing);
         color: var(--main-h-color);
 }
 /* ======================== /WORK ======================================== */
@@ -153,7 +157,7 @@ body{
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
+    letter-spacing: var(--primary-letter-spacing);
     color: var(--main-h-color);
 }
 .team-text{
@@ -161,7 +165,7 @@ body{
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em;
+    letter-spacing: var(--primary-letter-spacing);
     color: var(--main-p-color);
 }
 
@@ -196,7 +200,7 @@ body{
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
-    letter-spacing: 0.03em;
+    letter-spacing: var(--primary-letter-spacing);
     color: var(--main-h-color);
     border: none;
     background: var(--main-bg-lite-color);
@@ -222,7 +226,7 @@ body{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
+    letter-spacing: var(--primary-letter-spacing);
     color: var(--main-p-color);
 }
 /* ====== /Content =======*/
