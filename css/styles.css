@@ -177,12 +177,17 @@ body{
 .footer-link{
     color: var(--footer-link-col)
 }
-.logo-light {
+/* .logo-light {
     color: var(--main-white-color);
 }
 .footer-link-location{
     color: var(--main-white-color);
+} */
+.logo-light, 
+.footer-link-location{
+    color: var(--main-white-color)
 }
+
 .footer-link:hover,
 .footer-link:focus{
     color: var(--accent-color);
