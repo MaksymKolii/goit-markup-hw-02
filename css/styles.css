@@ -11,6 +11,8 @@ section background dark: #2F303A;
 :root{
     --primary-font-family:'Roboto', sans-serif;
     --secondary-font-family:'Raleway', sans-serif;
+    --primary-font-weight: 400;
+    --secondary-font-weight: 700;
     --accent-color: #2196F3;
     --btn-other-color: #188CE8;
     --main-p-color: #757575;
@@ -41,7 +43,7 @@ body{
 /* ========================== HEADER================================ */
 .logo {
     font-family: var(--secondary-font-family);
-    font-weight: 700;
+    font-weight: var(--secondary-font-weight);
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: var(--primary-letter-spacing);
@@ -94,7 +96,7 @@ body{
 }
 .hero-btn{
     font-family: inherit;
-    font-weight: 700;
+    font-weight: var(--secondary-font-weight);
     font-size: 16px;
     line-height: 1.88;
     cursor: pointer;
@@ -116,7 +118,7 @@ body{
 
 /* =========================== FEATURES ============================== */
 .feature-title{
-    font-weight: 700;
+    font-weight: var(--secondary-font-weight);
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: var(--primary-letter-spacing);
@@ -126,7 +128,7 @@ body{
 .feature-text,
 .footer-link,
 .footer-link-location{
-    font-weight: 400;
+    font-weight: var(--primary-font-weight);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: var(--primary-letter-spacing);
@@ -139,7 +141,7 @@ body{
 /* ======================== WORK ======================================== */
 .section-title{
 
-        font-weight: 700;
+        font-weight: var(--secondary-font-weight);
         font-size: 36px;
         line-height: 1.17;
         text-align: center;
@@ -161,7 +163,7 @@ body{
     color: var(--main-h-color);
 }
 .team-text{
-    font-weight: 400;
+    font-weight: var(--primary-font-weight);
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -207,7 +209,8 @@ body{
     border-radius: 4px;
     cursor: pointer;
 }
-.filter-btn:hover{
+.filter-btn:hover,
+.filter-btn:focus{
     background-color: var(--accent-color);
     box-shadow: var(--box-shadow-filter);
     border-radius: 4px;
@@ -216,14 +219,14 @@ body{
 /* ===== /filter ====-=== */
 /* ====== Content =======*/
 .content-title{
-    font-weight: 700;
+    font-weight: var(--secondary-font-weight);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--main-h-color);
 }
 .content-text{
-    font-weight: 400;
+    font-weight: var(--primary-font-weight);
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: var(--primary-letter-spacing);
